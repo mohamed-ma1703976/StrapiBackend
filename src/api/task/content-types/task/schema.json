@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tasks",
+  "info": {
+    "singularName": "task",
+    "pluralName": "tasks",
+    "displayName": "task",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "surahName": {
+      "type": "string",
+      "required": true
+    },
+    "fromAya": {
+      "type": "integer"
+    },
+    "toAya": {
+      "type": "integer"
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "completedDate": {
+      "type": "date"
+    },
+    "masteryLevel": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "studentId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::student.student"
+    },
+    "surahId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::surah.surah"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

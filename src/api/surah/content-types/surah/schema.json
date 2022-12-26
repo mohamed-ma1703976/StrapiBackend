@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surahs",
+  "info": {
+    "singularName": "surah",
+    "pluralName": "surahs",
+    "displayName": "surah"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "englishName": {
+      "type": "string"
+    },
+    "ayaCount": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Medinan",
+        "Meccan"
+      ]
+    }
+  }
+}
